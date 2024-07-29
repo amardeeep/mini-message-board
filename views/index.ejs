@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <h1><%= title %></h1>
+    <ul>
+      <% messages.map((message)=>{%>
+      <li>
+        <div>
+          <h2>Title : <%= message.text %></h2>
+          <p>User : <%= message.user%></p>
+          <p>Date : <%= message.added %></p>
+        </div>
+      </li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
