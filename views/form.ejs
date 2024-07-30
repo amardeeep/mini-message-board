@@ -1,20 +1,32 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="./new.css" />
+  </head>
   <body>
-    <div><%- include('header')%></div>
+    <div class="header"><%- include('header')%></div>
     <form method="POST" action="/new">
-      <h2>Write a message !</h2>
-      <input
-        type="text"
-        name="messageText"
-        placeholder="Your message goes here"
-      />
-      <input
-        type="text"
-        name="userText"
-        placeholder="Your user name goes here"
-      />
+      <h2>Message Details :</h2>
+      <div class="input">
+        <label for="user">Enter Your User Name :</label>
+        <input
+          id="user"
+          type="text"
+          name="userText"
+          placeholder="Your user name goes here"
+        />
+      </div>
+      <div class="input">
+        <label for="mes">Enter Your Message :</label>
+        <input
+          id="mes"
+          type="text"
+          name="messageText"
+          placeholder="Your message goes here"
+        />
+      </div>
+
       <button type="submit">Submit</button>
     </form>
-    <div><%- include('footer')%></div>
+    <div class="footer"><%- include('footer')%></div>
   </body>
 </html>
