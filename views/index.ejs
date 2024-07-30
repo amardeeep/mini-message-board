@@ -1,4 +1,8 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="../public/index.css" />
+  </head>
+
   <body>
     <div><%- include('header')%></div>
     <a href="/new"><button>NEW MESSAGE</button></a>
@@ -9,6 +13,7 @@
           <h2>Title : <%= message.text %></h2>
           <p>User : <%= message.user%></p>
           <p>Date : <%= message.added %></p>
+          <button>View Details</button>
         </div>
       </li>
       <% }) %>
