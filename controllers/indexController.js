@@ -1,5 +1,3 @@
-const app = require("../app");
-const express = require("express");
 const messages = [
   {
     text: "Hi there!",
@@ -18,6 +16,7 @@ const renderIndex = (req, res) => {
 const getForm = (req, res) => {
   res.render("form");
 };
+
 const postForm = (req, res) => {
   const messageText = req.body.messageText;
   const messageUser = req.body.userText;
