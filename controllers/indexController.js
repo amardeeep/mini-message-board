@@ -13,7 +13,7 @@ const messages = [
   },
 ];
 const renderIndex = (req, res) => {
-  res.render("index", { title: "Mini Message Board", messages: messages });
+  res.render("index", { messages: messages });
 };
 const getForm = (req, res) => {
   res.render("form");

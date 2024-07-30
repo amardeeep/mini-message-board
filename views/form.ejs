@@ -1,7 +1,8 @@
 <html>
   <body>
+    <div><%- include('header')%></div>
     <form method="POST" action="/new">
-      <h1>Write a message !</h1>
+      <h2>Write a message !</h2>
       <input
         type="text"
         name="messageText"
@@ -14,5 +15,6 @@
       />
       <button type="submit">Submit</button>
     </form>
+    <div><%- include('footer')%></div>
   </body>
 </html>
