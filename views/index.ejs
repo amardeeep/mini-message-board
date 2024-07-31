@@ -15,7 +15,9 @@
               <strong><%= message.text %></strong>
             </p>
             <p>Date : <em><%= message.added %></em></p>
-            <a href="/open"><button>Open!</button></a>
+            <a href="/<%=message.user %>/<%=message.text %>/<%= message.added%>"
+              ><button>Open!</button></a
+            >
           </div>
         </li>
         <% }) %>

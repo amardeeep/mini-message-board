@@ -24,4 +24,11 @@ const postForm = (req, res) => {
   res.redirect("/");
 };
 
-module.exports = { renderIndex, getForm, postForm };
+const getOpen = (req, res) => {
+  const user = req.params.title;
+  const message = req.params.message;
+  const date = req.params.date;
+  res.render("open", { user: user, message: message, date: date });
+};
+
+module.exports = { renderIndex, getForm, postForm, getOpen };
