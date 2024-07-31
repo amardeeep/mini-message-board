@@ -21,6 +21,7 @@ body{
 }
 .content{
     padding-top: 1rem;
+    padding-bottom: 1rem;
     min-height: 85vh;
     max-height: max-content;
     width: 100vw;
